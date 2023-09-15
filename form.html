@@ -8,7 +8,7 @@
 <body>
   <h1>로그인 폼</h1>
   <hr>
-  <form action="none" method="post" autocomplete="off">
+  <form action="none" method="get" autocomplete="off">
     <!-- get http://127.0.0.1:5500/none? -->
     <!-- get http://127.0.0.1:5500/none?id=aaaa&pw=1111 변수이므로 name에 변수명 줘야함 -->
     <!-- post http://127.0.0.1:5500/none : 서버가 없을 때는 get으로 확인-->
@@ -21,7 +21,30 @@
     <p>
       <label for="pw">암 호 : </label>
       <input type="password" name="pw" id="pw">
-      <input type="submit" value="로그인">
+      <input type="submit" value="로그인"><br><br>
+
+      <!-- http://127.0.0.1:5500/none?id=aaaa&pw=1111&vehicle1=Bike&vehicle2=Car&vehicle3=Boat -->
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> I have a bike</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> I have a car</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3"> I have a boat</label><br><br>
+      
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label><br><br>
+
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
     </p>
   </form>
 </body>

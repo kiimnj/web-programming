@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student</title>
+  <link rel="stylesheet" href="css/structure.css">
+</head>
+<body>
+  <header><small>header</small></header>
+  <nav><small>nav</small></nav>
+  <main>
+    <section>
+      <h1>학생 정보 입력</h1>
+      <br><hr><br>
+      <label for="name">이름 : <input type="text" id="name" name="name" placeholder="이름을 입력하세요." required></label>
+      <br><br>
+      <label>성별 : </label>
+      <input type="radio" id="male" name="fm" value="male">
+      <label for="male">남</label>
+      <input type="radio" id="female" name="fm" value="female">
+      <label for="female">여</label><br>
+      <br>
+      <label for="age">나이 : <input type="number" value=0 min="0" max="120" id="age" name="age" required></label>
+      <br><br>
+      <label for="num">전화번호 : <input type="tel" id="num" name="num" placeholder="000-0000-0000"></label>
+      <br><br>
+      <label for="email">이메일 : <input type="email" id="email" name="email" placeholder="aaa@aaa.aaa"></label>
+      <br><br>
+      <label>관심언어 : </label>
+      <input type="checkbox" id="lang1" name="lang1" value="java">
+      <label for="lang1"> java</label>
+      <input type="checkbox" id="lang2" name="lang2" value="javascript">
+      <label for="lang2"> javascript</label>
+      <input type="checkbox" id="lang3" name="lang3" value="python">
+      <label for="lang3"> python</label>
+      <br><br>
+      <label for="food">좋아하는 음식:</label>
+      <select id="food" name="food">
+        <option value="koreanf">한식</option>
+        <option value="chineesef">중식</option>
+        <option value="westf">양식</option>
+        <option value="japanesef">일식</option>
+      </select>
+      <br><br>
+      <!--  -->
+      <input type="submit" value="입력"><br><br>
+    </section>
+  </main>
+  <aside><small>aside</small></aside>
+  <footer><small>footer</small></footer>
+</body>
+</html>
