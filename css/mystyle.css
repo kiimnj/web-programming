@@ -1,0 +1,30 @@
+div > .main {
+  background-color: linen;
+}
+body.main {
+  background-color: azure;
+}
+div strong {
+  color: dodgerblue
+}
+ol, ul {
+  color: green; 
+  border: 2px dotted blue;
+  border-width: 2px 5px;
+}
+li:hover {
+  background-color: yellowgreen;
+}
+tr:hover {
+  background-color: linen;
+}
+tr:nth-child(even) {
+  background-color: linen;
+}
+table {
+  border-collapse: collapse;
+  border: 2px dotted blue;
+}
+th, td {
+  border: 2px dotted green;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #abs {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      background-color: blue;
+    }
+    #rel {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background-color: yellow;
+    }
+    #fixed {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="card_front.PNG" alt=""> merry
+    <div id="abs">Merry</div>
+  </div>
+
+  <div id="rel">relative
+    <div id="abs">Merry</div>
+  </div>
+
+  <div id="fixed">작성일자 : 2023.09.15</div>
+</body>
+</html>

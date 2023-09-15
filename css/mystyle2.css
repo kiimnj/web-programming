@@ -1,0 +1,25 @@
+#box1 {
+  border-bottom: 2px dotted blue;
+  background-color: antiquewhite;
+}
+#box2 {
+  display: inline-block;
+  width: 150px;
+  height: 200px;
+  border-right: 2px dotted blue;
+  background-color: antiquewhite; 
+}
+#box3 {
+  display: inline-block;
+  border-left: 2px dotted blue;
+  margin: 0 auto;
+  background-color: antiquewhite; 
+  height: 200px;
+  width: calc(100% - 160px);
+}
+.border {
+  border-collapse: collapse;
+}
+nav {
+
+}

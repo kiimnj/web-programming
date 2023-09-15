@@ -4,22 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <!-- <style>
+    div > .main {background-color: linen;}
+    body.main {background-color: azure;}
+    div strong {color: dodgerblue}
+    ol, ul {color: green;}
+    li:hover {background-color: yellowgreen;}
+    tr:hover {background-color: linen;}
+    tr:nth-child(even) {background-color: linen;}
+  </style> -->
 </head>
-<body>
+<body class="main">
   이번시간에 배우는 내용<br>
-  Git HTML CSS Javascript <br>
-  <ol>
+  Git HTML <strong>CSS</strong> Javascript 
+  <br>
+  <p style="color: green;">안녕하세요
+    <em style="font-size: 20px;">자식입니다</em>
+  </p>
+
+  <div> 
+  <ol class="main">
     <li>Git</li>
     <li>HTML</li>
-    <li>CSS</li>
+    <li><strong>CSS</strong></li>
     <li>Javascript</li>
   </ol>
 
-  <ul>
+  <ul class="main">
     <li>과목 점수</li>
     <li>Git 80</li>
     <li>HTML 90</li>
-    <li>CSS 70</li>
+    <li><strong>CSS</strong> 70</li>
     <li>Javascript 60</li>
   </ul>
 
@@ -38,7 +54,7 @@
         <td align="right">90</td>
       </tr>      
       <tr>
-        <td>CSS</td>
+        <td><strong>CSS</strong></td>
         <td align="right">70</td>
       </tr>      
       <tr>
@@ -50,6 +66,6 @@
       <td>합계</td>
       <td align="right">360</td>
     </tfoot>
-  </table>
+  </table></div>
 </body>
 </html>
