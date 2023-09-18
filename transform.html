@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회전</title>
+  <style>
+    div {
+      display: inline-block;
+      color: white;
+      background-color: gray;
+      padding: 10px;
+      margin: 10px;
+    }
+    div#r {
+      /* transform: rotate(20deg); */
+      transform: rotatex(60deg);
+    }
+    div#pers {
+      background-color: white;
+      perspective: 200px;
+    }
+    div#s {
+      transform: skew(20deg, -20deg);
+    }
+    div#sc {
+      transform: scale(1, 3);
+    }
+    div#t {
+      transform: translate(50px, 100px);
+    }
+  </style>
+</head>
+<body>
+  <div id="r"><img src="jeju.PNG" width="100px" height="100px" alt=""></div>
+  <div id="pers"><div id="r"><img src="jeju.PNG" width="100px" height="100px" alt=""></div></div>
+  <div id="s">skew</div>
+  <div id="sc">scale</div>
+  <div id="t">translate</div>
+</body>
+</html>

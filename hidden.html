@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    span {
+      /* visibility: hidden; */
+      display: none; /* 공백 없이 숨김 */
+    }
+    span:hover {
+      /* visibility: visible; */
+    }
+    div {
+        display : inline-block;
+    }
+    ul {
+      display : inline-block;
+      background-color: bisque;
+      padding: 10px;
+    }
+    li {
+      display : inline-block;
+      background-color: greenyellow;
+      margin: 5px 5px 5px 20px; /* 중첩 */
+      list-style-type: upper-alpha;
+      list-style-position: inside;
+      
+    }
+    ul li a {
+      text-decoration : none; /* 링크 보이지 않게 */
+    }
+
+    ul li a:hover {
+      color : violet; /* 마우스 올라 갈 때 색 */
+      background-color: bisque;
+    }
+  </style>
+</head>
+<body>
+  <p>CSS is a cascading (<span> style </span>) sheet</p> <!-- <span hidden> : 공백없이 숨기기 -->
+    <ul>
+      <div id="menu">MENU<div>
+      <li><a href="">coffee</a></li>
+      <li><a href="">tea</a></li>
+      <li><a href="">milk</a></li>
+    </ul>
+  </body>
+</html>

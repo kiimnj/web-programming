@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            /* width: 700px; : 고정 폭 */
+            display: grid;
+            flex-direction: column-reverse;
+            background-color: white;
+            border: 1px black solid;
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-rows: minmax(50px, auto);
+        }
+        .items:nth-child(odd) {
+            background-color: gray;
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="items">Lorem ipsum dolor sit amet consectetur tae tempore modi accusantium.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur tae tempore modi accusantium.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur tae tempore modi accusantium.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur tae tempore modi accusantium.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur tae tempore modi accusantium.</div>
+    </div>
+</body>
+</html>
