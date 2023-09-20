@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function gugudan(number) {
+            if (number == null) {
+             document.write("값 없음");
+            } else if (parseInt(number) == NaN) {
+            document.write("숫자가 아님");
+            } else {
+                for (i = 1; i <= 9; i++) {
+                    document.write(i, " * ", number, " = ", i * number);
+                    document.write("<br>");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>구구단 출력 함수 작성하기</h3>
+    <hr>
+    <script>
+        var num = prompt("구구단 단수 입력(2~9)", "2");
+        gugudan(num);
+    </script>
+</body>
+</html>

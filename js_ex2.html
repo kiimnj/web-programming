@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>while 문으로 1~입력받은 수까지 더하기</h3><hr>
+    <script>
+        var num;
+        var sum = 0
+        var i = 1;
+
+        num = prompt("정수 입력 : ");
+        document.write("입력 = ", num);
+        document.write("<br><br>");
+
+        if (num == null) {
+             document.write("값 없음");
+        } else if (parseInt(num) == NaN) {
+            document.write("숫자가 아님");
+        } else {
+            while (i <= num) {
+                sum += parseInt(i)
+                document.write("i = ", i);
+                document.write("<br>");
+                i++;
+            }
+            document.write("<br>");
+            document.write("sum = ", sum);
+        }
+    </script>
+</body>
+</html>

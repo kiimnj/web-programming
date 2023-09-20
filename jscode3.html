@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var ret = prompt("숫자를 입력하세요", "1"); //변수 정의는 var, let
+        // if (ret == null) { //취소 == null
+        //     console.log("입력하지 않았음.");
+        // } else {
+        //     console.log(ret);
+        // }
+        var ret = confirm("삭제하시겠습니까?");
+        if (ret) {
+            console.log("삭제완료!"); //true
+        } else {
+            console.log("삭제하지 않음!"); //false
+        }
+    </script>
+</body>
+</html>

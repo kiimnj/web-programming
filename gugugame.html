@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function randInt() {
+            let number;
+            number = Math.ceil(Math.random() * 9);
+            return number
+        }
+    </script>
+</head>
+<body>
+    <h3>구구단 연습</h3>
+    <hr>
+    <script>
+        let x = randInt();
+        let y = randInt();
+
+        ans = prompt(x + " * " + y + " = ?");
+        document.write("입력값 : " + ans + "<br>");
+
+
+        if (!isNaN(ans) && ans != null) {
+            if (ans == x * y) {
+                document.write("정답");
+            } else {
+                document.write("오답");
+            }
+        } else {
+            document.write("숫자로 입력해야함");
+        }
+    </script>
+</body>
+</html>

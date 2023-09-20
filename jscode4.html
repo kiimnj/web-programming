@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x; //전역변수
+
+        // function f() {
+        //     // var y; //지역변수
+        //     x = 10; //전역변수
+        //     console.log("y =  ", y); //출력: y = undefined : js의 호이스팅? - 자동으로 미리 선언됨
+        //     y = 10; //지역변수
+        //     z = 10; //전역변수
+        // }
+
+        // // f();
+        // console.log("x =  ", x);
+        // // console.log("y =  ", y); //ReferenceError - 지역변수
+        // console.log("z =  ", z);
+
+
+        function f1() {
+            var x; //지역변수
+            x = 1;
+            console.log("x =  ", x);
+            var y;
+            console.log("y =  ", y);
+            this.x = 100; //전역변수
+        }
+        
+        f1();
+        console.log("x =  ", x);
+
+    </script>
+</body>
+</html>

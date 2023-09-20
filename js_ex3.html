@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>암호 you 맞출 때까지 입력</h3><hr>
+    <script>
+        while(true) {
+            var pw = prompt("암호 입력")
+            if(pw==null) {
+                continue;
+            } else if (pw=="you") {
+                document.write("통과");
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

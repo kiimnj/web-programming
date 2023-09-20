@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        setTimeout(function () {
+            console.log("3초가 지났음");
+        }, 3000);
+
+        setInterval(function () {
+            console.log("1초마다 호출");
+        }, 1000);
+        
+
+        (function () {
+            console.log(this);
+        })();
+
+        (() => console.log(this))();
+    </script>
+    </script>
+</body>
+</html>
