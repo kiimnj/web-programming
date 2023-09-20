@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerHTML 변경하기</title>
+    <script>
+        function change() {
+            //span태그 클릭 시 innerHTML을 img 태그로 변경
+            const span = document.querySelector("span");
+            span.style.display = "block";
+            span.style.fontSize =  "30px";
+            span.style.border = "3px dotted magenta";
+            span.style.margin =  "10px";
+            span.style.padding =  "5px";
+
+            console.log(`span.style.display = ${span.style.display}`);
+            console.log(`span.style.fontSize = ${span.style.fontSize}`);
+            console.log(`span.style.border = ${span.style.border}`);
+        }
+    </script>
+</head>
+<body>
+    <h3>innerHTML 활용</h3>
+    <hr>
+    <p id="firstP" 
+    style="color:blue;background-color:yellow;"
+    onclick="this.style.backgroundColor='white'">
+        이것은
+        <span style="color:red">
+            문장입니다
+        </span>
+    </p>
+
+    <!-- <button>스타일변경</button> -->
+    <input type="button" value="스타일변경" onclick="change();">
+</body>
+</html>

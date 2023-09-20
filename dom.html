@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM 구조 출력</title>
+</head>
+<body>
+    <h3>DOM 객체 p의 프로퍼티, 스타일, 이벤트 리스너</h3>
+    <hr>
+    <p id="firstP" 
+    style="color:blue;background-color:yellow;"
+    onclick="this.style.backgroundColor='white'">
+        이것은
+        <span style="color:red">
+            문장입니다
+        </span>
+    </p>
+    <p id="nextP" 
+    style="color:blue;background-color:yellow;"
+    onclick="this.style.backgroundColor='white'">
+        이것은
+        <span style="color:red">
+            다음 문장입니다
+        </span>
+    </p>
+    <script>
+        //head에 넣으면 - Uncaught TypeError: Cannot read properties of null (reading 'id')
+
+        //const p = document.getElementById
+        //const p = document.getElementsByClassName("firstP")
+        const p = document.querySelector("#firstP");
+        console.log(`id = ${p.id}`);
+        console.log(`tagName = ${p.tagName}`);
+        console.log(`innerHTML = ${p.innerHTML}`);
+        console.log(`style.color = ${p.style.color}`);
+        console.log(`childElementCount = ${p.childElementCount}`);
+        console.log(`onclick = ${p.onclick}`);
+        
+        const p2 = document.querySelector("#nextP");
+        console.log(`id = ${p2.id}`);
+        console.log(`tagName = ${p2.tagName}`);
+        console.log(`innerHTML = ${p2.innerHTML}`);
+        console.log(`style.color = ${p2.style.color}`);
+        console.log(`childElementCount = ${p2.childElementCount}`);
+        console.log(`onclick = ${p2.onclick}`);
+    </script>
+</body>
+</html>

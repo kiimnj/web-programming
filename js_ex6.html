@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //버튼 클릭 시 클래스가 plain인 객체들의 innerText를 important로 변경
+        function addList() {
+           let newList =  document.createElement("li");
+           let newBtn =  document.createElement("button");
+           let parent = document.getElementById("parent");
+           newList.style.backgroundColor = "yellow";
+           newList.setAttribute("id", "newList");
+           newList.innerText = "새로 생성된 list입니다.  ";
+           newBtn.innerText = "X";
+
+           newBtn.onclick = function() {
+                let p = this.parentElement;
+                p.removeChild(this);
+           }
+           parent.appendChild(newList);
+           newList.appendChild(newBtn);
+        }
+    </script>
+</head>
+<body id="parent">
+    <form action="">
+        <input type="text">
+        <button>
+        <!-- <button onclick="addList()">추가 -->
+            <a href="javascript:addList()">추가</a>
+        </button>
+    </form>
+    <hr>
+    <ul id="parent">
+
+    </ul>
+</body>
+</html>

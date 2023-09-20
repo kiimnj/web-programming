@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function same() {
+            let order = document.getElementsByClassName("order");
+            let ship = document.getElementsByClassName("ship");
+
+            for (let od of order) {
+                for (let sh of ship) {
+                    od = sh;
+                }
+            }
+        }
+    </script>
+    <style>
+        .label {
+            display: inline-block;
+            width: 65px;
+        }
+    </style>
+</head>
+<body>
+    <h2>주문/배송 정보 등록</h2>
+    <hr>
+    <h3>주문 정보 등록</h3>
+    <form action="none">
+        <label for="" class="label">이름</label>
+        <input type="text" id="name"  class="order"><br>
+        <label for="" class="label">전화번호</label>
+        <input type="text" id="tel"  class="order"><br>
+        <label for="" class="label">주소</label>
+        <input type="text" id="addr"  class="order"><br>
+    </form>
+    <br><hr>
+    <h3>배송 정보 등록</h3>
+
+    <input type="checkbox" id="same" onclick="same()">
+    <label for="same">주문 정보와 배송 정보가 동일함</label>
+    <br><br>
+    <form action="none">
+        <label for="" class="label">이름</label>
+        <input type="text" id="name2" class="ship"><br>
+        <label for="" class="label">전화번호</label>
+        <input type="text" id="tel2" class="ship"><br>
+        <label for="" class="label">주소</label>
+        <input type="text" id="addr2" class="ship"><br>
+    </form>
+</body>
+</html>

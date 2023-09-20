@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여러 DOM 객체 제어하기</title>
+    <script>
+        //버튼 클릭 시 클래스가 plain인 객체들의 innerText를 important로 변경
+        function change() {
+            // let divs = document.getElementsByClassName("plain");
+            let divs = document.querySelectorAll(".plain");
+            console.log(divs.length);
+
+            for (let div of divs) {
+                div.innerText = "very important";
+                div.style.color = "green";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>여러 DOM 객체 제어하기</h3>
+    <hr>
+    <div class="plain">plain</div>
+    <div class="important">important</div>
+    <div class="plain">plain</div>
+    <button onclick="change()">plain 내용 변경</button><br><br>
+
+    <script>
+
+    </script>
+</body>
+</html>

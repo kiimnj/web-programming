@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 리스너</title>
+    <script>
+        var div;
+        function init() {
+            //sol2
+            div = document.querySelector("#event");
+            div.onmouseover = function () {
+                div.style.backgroundColor = "blue";
+                div.style.color = "white";
+            }
+            div.onmouseover = () => div.style.backgroundColor = "white";
+
+            //sol3
+            // div.addEventListner("onmouse", over);
+            // div.addEventListner("onmouse", out);
+        }
+        // function over() {~~}
+        // function out() {~~}
+    </script>
+</head>
+<body onload="init()">
+    <h3>이벤트 리스너</h3>
+    <hr>
+    <div id="event">
+        <!-- sol1 -->
+        <!-- onmouseover="this.style.backgroundColor='orchid'"
+        onmouseout="this.style.backgroundColor='white'"> -->
+        마우스 올리면 orchid색으로 변경
+    </div>
+</body>
+</html>
