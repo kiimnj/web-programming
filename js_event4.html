@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포커스 관련 이벤트 리스너</title>
+    <script>
+        function check(obj) {
+            if (obj.value == "") {
+                alert("이름 반드시 입력");
+                obj.focus(); //빈칸 처리는 requiered로 해도 됨
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>포커스 관련 이벤트 리스너</h3>
+    <hr>
+    <form action="">
+        이름<input type="text" id="name"
+                onblur="check(this)">
+        학번<input type="text" id="number">
+    </form>
+</body>
+</html>

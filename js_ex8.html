@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디오 버튼 클릭 시 이미지 출력</title>
+    <script>
+        function login() {
+            let name = document.form.name.value;
+            alert(`${name} 님 반갑습니다`);
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <h3>라디오 버튼 클릭 시 이미지 출력</h3>
+    <hr>
+    <form name="form" action="" onsubmit="return login()">
+        이름 <input type="text" name="name" required><br>
+        학번 <input type="text" name="number" required>
+        <input type="submit" value="클릭">
+    </form>
+</body>
+</html>

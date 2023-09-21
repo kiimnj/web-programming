@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디오 버튼 클릭 시 이미지 출력</title>
+    <script>
+        var sum = 0;
+        function drawImage(obj) {
+            if (obj.checked) { //event.target.checked
+                img.src = obj.value; //value = 1,2,3으로 처리, switch로 해줘야함
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>라디오 버튼 클릭 시 이미지 출력</h3>
+    <hr>
+    <input type="radio" value="images/cup-1.jpg" name="cup" onclick="drawImage(this)" checked> 컵1
+    <input type="radio" value="images/cup-2.jpg" name="cup" onclick="drawImage(this)"> 컵2
+    <input type="radio" value="images/cup-3.jpg" name="cup" onclick="drawImage(this)"> 컵3
+    <br><img id="img" src="images/cup-2.jpg" alt="">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 리스너</title>
+    <script>
+        var sum = 0;
+        function drawImage() {
+            let sel = document.form.fruits;
+            let opt = sel.options;
+            let img = document.getElementById("img");
+            console.log(opt[sel.selectedIndex]);
+            img.src = opt[sel.selectedIndex].value;
+        }
+    </script>
+</head>
+<body>
+    <h3>셀렉트 이벤트 리스너</h3>
+    <hr>
+    <form name="form" action="">
+        <select name="fruits" onchange="drawImage()">
+            <option value="images/cup-1.jpg">컵1</option>
+            <option value="images/cup-2.jpg" selected>컵2</option>
+            <option value="images/cup-3.jpg">컵3</option>
+        </select>
+        <img id="img" src="images/cup-2.jpg" alt="">
+    </form>
+</body>
+</html>

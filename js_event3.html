@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 관련 이벤트 리스너</title>
+    <script>
+        function wheel(e, obj) {
+            let width = 1;
+            if(e.wheelDelta < 0) {
+                if(width > 0) width--;
+            } else {
+                width++;
+                if(width > 10) width = 10;
+            }
+            obj.style.border = width + "px ridge black";
+            //이벤트리스너 함수 사용하면 됨
+        }
+    </script>
+</head>
+<body>
+    <h3>마우스 관련 이벤트 리스너</h3>
+    <hr>
+    <div>
+        마우스 관련
+        <span onmousewheel="wheel(event, this)">이벤트</span>
+        가 발생합니다.
+    </div>
+</body>
+</html>
